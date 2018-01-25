@@ -1,0 +1,73 @@
+/opt/kafka_2.10-0.8.2.0/bin/kafka-topics.sh --zookeeper mnode1:2181 --create --topic magic.3rd.content.brief  --partitions 10  --replication-factor 3
+
+
+mw-content.v2-content-etl-prod
+mw-content.v2-content-publisher-prod
+
+
+management-api          IN      A       10.117.178.48
+management-api          IN      A       10.251.242.4
+management-api          IN      A       10.168.80.11
+
+api_v2_content
+
+management-api.mw.local
+
+
+curl -X POST http://management-api.mw.local//api/v2/content/3rd_party/insert
+
+10.51.237.248
+
+curl -X POST \
+  http://preprod1:10901//api/v2/content/3rd_party/insert \
+  -H 'Cache-Control: no-cache' \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: b50ff7a2-bdda-83e1-60ba-47040dcad5b5' \
+  -d '[
+ {
+  "source": "UC",
+  "content_id": "1",
+  "title": "我的老哥",
+  "category": ["社会"],
+  "tags": ["贾乃亮"],
+  "pub_time": 1515739327000,
+  "update_time": 1515739327000
+ }
+]'
+
+
+
+curl -X POST \
+  http://management-api.mw.local//api/v2/content/3rd_party/insert \
+  -H 'Cache-Control: no-cache' \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: b50ff7a2-bdda-83e1-60ba-47040dcad5b5' \
+  -d '[
+ {
+  "source": "UC",
+  "content_id": "1",
+  "title": "我的老哥",
+  "category": ["社会"],
+  "tags": ["贾乃亮"],
+  "pub_time": 1515739327000,
+  "update_time": 1515739327000
+ }
+]'
+
+
+curl -X POST \
+  http://management-api.mw.local/api/v2/content/3rd_party/insert \
+  -H 'Cache-Control: no-cache' \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: b50ff7a2-bdda-83e1-60ba-47040dcad5b5' \
+  -d '[
+ {
+  "source": "UC",
+  "content_id": "1",
+  "title": "我的老哥",
+  "category": ["社会"],
+  "tags": ["贾乃亮"],
+  "pub_time": 1515739327000,
+  "update_time": 1515739327000
+ }
+]'

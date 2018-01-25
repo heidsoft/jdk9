@@ -1,0 +1,14 @@
+Building target 'default (exploded-image)' in configuration 'macosx-x86_64-normal-server-release'
+/bin/bash: line 0: cd: /Users/heidsoft/research/jdk9/langtools/make: No such file or directory
+make[2]: *** [interim-langtools] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/bin/bash: line 0: cd: /Users/heidsoft/research/jdk9/hotspot/make: No such file or directory
+make[2]: *** [hotspot-server-gensrc] Error 1
+
+ERROR: Build failed for target 'default (exploded-image)' in configuration 'macosx-x86_64-normal-server-release' (exit code 2) 
+----- Build times -------
+Start 2018-01-13 22:42:06
+End   2018-01-13 22:42:07
+
+00:00:01 TOTAL
+-------------------------
